@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/jquery/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+  $("#btn1").click(function(){
+    $("img").after("<i>After</i>");
+  });
+    $("#btn2").click(function(){
+    $("i").remove();
+  });
+});
+</script>
+</head>
+
+<body>
+<img src="/i/eg_w3school.gif" alt="W3School Logo" />
+<br><br>
+
+<button id="btn1">在图片后面添加文本</button>
+<button id="btn2">清除</button>
+
+</body>
+</html>
